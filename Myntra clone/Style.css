@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+.containernav {
+    padding: 0px 8vw;
+    height: 12%;
+    width: 1005;
+    background-color: rgb(246, 245, 245);
+}
+.left > img{
+    height: 3rem;
+    width: 3rem;
+}
+
+.left > ul> li{
+    padding: 5px;
+}
+
+.search {
+    width: 15rem;
+    padding: 7px 12px;
+    border: none;
+    background-color: rgb(238, 238, 238);
+    border-radius: 5px;
+}
+
+.rightbox {
+    display: flex;
+    margin: 13px;
+}
+
+.open_img > img{
+    width: 100%;
+}
+
+.section1{
+    width: 100%;
+    padding: auto;
+}
+
+.section1 > img{
+    width: 9.8%;
+}
+
+.section2{
+    display: flex;
+    width: 100%; 
+    flex-wrap: wrap;
+    background-color: rgb(235, 234, 234);
+    padding-bottom: 50px;
+}
+.section2 > img{
+    width: 15%;
+}
+
+.footercolor{
+    background-color: rgb(245, 245, 245);
+}
+
+.footerimg{
+    padding: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.popular{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.footer1{
+    font-size: 1rem;
+    padding:  3px 29%;
+}
+
+.footer1 > h3{
+    text-align: center;
+}
+
+.copyright{
+    padding: 50px 0 10px 0;
+    text-align: center;
+}
+
+
+.hover > li:hover, .hover > div:hover{
+    background-color: rgb(223, 223, 223);
+    border-radius: 5px;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 850px) {
+    .containernav {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .left {
+        justify-content: center;
+    }
+}
+
+  @media only screen and (max-width: 500px) {
+    .containernav{
+        flex-direction: column;
+    }
+
+    .left{
+        flex-direction: column;
+    }
+
+    .right{
+        flex-direction: column;
+    }    
+    .section1 > img{
+        width: 19.2%;
+    }
+
+    .section2 > img{
+        width: 30%;
+    }
+
+    .footerimg > img{
+        width: 40%;
+    }
+
+    .footerpad{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nodecoration li {
+        text-align: center;
+    }
+
+    .footer1{
+        text-align: center;
+        padding: 5px 5%;
+    }
+
+  }
